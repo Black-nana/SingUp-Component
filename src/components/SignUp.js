@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { FaUser, FaEnvelope, FaLock } from 'react-icons/fa';
 import { RiAccountBoxFill } from 'react-icons/ri';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
 
 import img2 from '../asserts/jocke-wulcan-KLOW1bD616Y-unsplash.jpg';
 
@@ -29,12 +29,12 @@ const SignUp = () => {
       email: '',
       password: '',
     });
-  };
+  };                        
 
   return (
     <div>
-      <div className='grid grid-cols-2'>
-        <div className='h-full relative'>
+      <div className='grid grid-cols-2 max-md:grid '>
+        <div className='h-full relative max-md:hidden'>
           <div className='absolute inset-0 bg-black opacity-50'></div>
           <img
             src={img2}
@@ -46,9 +46,9 @@ const SignUp = () => {
           </p>
         </div>
 
-        <div className='grid place-items-center'>
-          <div className='form-container w-3/4 grid gap-4'>
-            <h1 className='font-bold text-3xl flex justify-items-center justify-center gap-2'>
+        <div className='grid place-items-center w-full  max-md:absolute h-screen'>
+          <div className='form-container w-3/4 grid gap-4  h-3/4 border'>
+            <h1 className='font-bold text-3xl flex justify-items-center justify-center gap-2 border max-md:h-14'>
               <span className='border-b-4 border-green-600'>Create</span>{' '}
               Account
               <RiAccountBoxFill className='text-green-600 text-4xl group' />
