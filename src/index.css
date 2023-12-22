@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,88 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Styles for the sign up component */
+
+.sign-up-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+/* Styles for the image carousel */
+
+.image-carousel {
+  flex: 1;
+  width:40% ;
+}
+
+.carousel-root {
+  position: relative;
+}
+
+.carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+/* Styles for the sign up form */
+
+.form-container {
+  padding: 32px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.input-group label {
+  flex: 1;
+  margin-right: 16px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #40c568;
+}
+
+
+
+/* Media queries */
+
+@media (max-width: 768px) {
+  .sign-up-container {
+    flex-direction: column;
+  }
+
+  .image-carousel {
+    display: none;
+  }
+
+  .form-container {
+    flex: none;
+  }
 }
