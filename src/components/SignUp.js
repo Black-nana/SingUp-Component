@@ -47,8 +47,8 @@ const SignUp = () => {
         </div>
 
         <div className='grid place-items-center w-full  max-md:absolute h-screen'>
-          <div className='form-container w-3/4 grid gap-4  h-3/4 border'>
-            <h1 className='font-bold text-3xl flex justify-items-center justify-center gap-2 border max-md:h-14'>
+          <div className='form-container w-3/4 grid gap-4  h-3/4'>
+            <h1 className='font-bold text-3xl flex justify-items-center justify-center gap-2  max-md:h-14'>
               <span className='border-b-4 border-green-600'>Create</span>{' '}
               Account
               <RiAccountBoxFill className='text-green-600 text-4xl group' />
